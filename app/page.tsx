@@ -1,6 +1,8 @@
 // import { ThemeToggle } from "@/components/theme-toggle";
 
+import AnalyticsChart from "@/components/dashboard/AnalyticsChart";
 import DashboardCard from "@/components/dashboard/DashboardCard";
+import PostTable from "@/components/posts/PostTable";
 import { Newspaper } from "lucide-react";
 
 export default function Home() {
@@ -32,6 +34,8 @@ export default function Home() {
           icon={<Newspaper className="h-8 w-10" />}
         />
       </div>
+      <AnalyticsChart />
+      <PostTable title="Latest Posts" limit={5} />
     </>
   );
 }
